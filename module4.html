@@ -18,15 +18,30 @@
     </header>
     <main>
         <h1>Поведенческий дизайн</h1>
-        <p>Теория "Nudge" (подталкивание) — это способ организации среды, который помогает человеку сделать правильный выбор, не ограничивая его свободу.</p>
+        <p>Теория "Nudge" (подталкивание) — это способ организации среды, который помогает человеку сделать правильный выбор, не ограничивая его свободу. Речь идет не о жестком принуждении, а об изменении архитектуры выбора так, чтобы желательный вариант стал наиболее простым и естественным.</p>
+        <p>Примеры использования Nudge окружают нас повсюду: от расположения здоровых продуктов в столовых до настроек "по умолчанию" в программном обеспечении. Правильное проектирование среды позволяет решать общественные задачи и улучшать пользовательский опыт без агрессивного маркетинга.</p>
         
         <div class="quiz-box">
-            <h3>Тест: Что такое Nudge?</h3>
+            <h3>Тест: что такое Nudge?</h3>
             <div class="quiz-options">
-                <button class="quiz-option" onclick="checkAnswer(this, false, 4)">Обязательное принуждение</button>
-                <button class="quiz-option" onclick="checkAnswer(this, true, 4)">Мягкое подталкивание</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 4, 1)">Обязательное принуждение</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 4, 1)">Мягкое подталкивание</button>
             </div>
-            <p id="result4" class="quiz-result"></p>
+            <p id="result4_1" class="quiz-result"></p>
+
+            <h3>Тест: в чем главная особенность Nudge?</h3>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, true, 4, 2)">Не ограничивает свободу выбора</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 4, 2)">Полностью запрещает альтернативы</button>
+            </div>
+            <p id="result4_2" class="quiz-result"></p>
+
+            <h3>Тест: как Nudge влияет на пользователя?</h3>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, true, 4, 3)">Делает выбор удобнее</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 4, 3)">Заставляет пользователя нервничать</button>
+            </div>
+            <p id="result4_3" class="quiz-result"></p>
         </div>
     </main>
     <script src="js/script.js"></script>

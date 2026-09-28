@@ -1,7 +1,7 @@
-function checkAnswer(button, isCorrect, moduleId) {
+function checkAnswer(button, isCorrect, moduleId, questionId) {
     const parent = button.parentElement;
     const options = parent.querySelectorAll('.quiz-option');
-    const resultDiv = document.getElementById(`result${moduleId}`);
+    const resultDiv = document.getElementById(`result${moduleId}_${questionId}`);
 
     options.forEach(opt => opt.style.pointerEvents = 'none');
 

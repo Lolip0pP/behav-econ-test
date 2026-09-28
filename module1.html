@@ -18,15 +18,30 @@
     </header>
     <main>
         <h1>Архитектура выбора</h1>
-        <p>Система 1 работает автоматически и быстро, а Система 2 требует усилий и концентрации. Большинство наших ошибок происходит, когда мы полагаемся на Систему 1 там, где нужно включить Систему 2.</p>
+        <p>Наше мышление — это сложный механизм. Даниэль Канеман выделяет две основные системы: Система 1 работает автоматически и быстро, практически не требуя усилий, в то время как Система 2 отвечает за сложную умственную деятельность, требующую концентрации и логического анализа.</p>
+        <p>Большинство повседневных ошибок возникает из-за того, что мы пытаемся решать задачи "Системы 2" с помощью автоматизмов "Системы 1". Понимание этого разделения — первый шаг к осознанности.</p>
         
         <div class="quiz-box">
-            <h3>Тест: Какая система отвечает за решение сложных задач?</h3>
+            <h3>Тест: какой из вариантов описывает работу Системы 1?</h3>
             <div class="quiz-options">
-                <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Система 1 (Автоматическая)</button>
-                <button class="quiz-option" onclick="checkAnswer(this, true, 1)">Система 2 (Аналитическая)</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 1, 1)">Автоматическое реагирование</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 1, 1)">Логические вычисления</button>
             </div>
-            <p id="result1" class="quiz-result"></p>
+            <p id="result1_1" class="quiz-result"></p>
+
+            <h3>Тест: что требует включения Системы 2?</h3>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, false, 1, 2)">Привычные действия</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 1, 2)">Анализ данных</button>
+            </div>
+            <p id="result1_2" class="quiz-result"></p>
+
+            <h3>Тест: почему случаются ошибки мышления?</h3>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, true, 1, 3)">Перенос задач из Системы 2 в Систему 1</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 1, 3)">Избыток информации</button>
+            </div>
+            <p id="result1_3" class="quiz-result"></p>
         </div>
     </main>
     <script src="js/script.js"></script>

@@ -18,15 +18,30 @@
     </header>
     <main>
         <h1>Когнитивные искажения</h1>
-        <p>Наш мозг использует "короткие пути" для экономии энергии, что приводит к системным ошибкам в суждениях.</p>
+        <p>Наш мозг постоянно экономит ресурсы, используя эвристики — ментальные ярлыки, которые позволяют принимать быстрые решения в условиях неопределенности. Однако часто эти ярлыки ведут к систематическим ошибкам.</p>
+        <p>Эффект привязки заставляет нас опираться на первую полученную информацию, а предвзятость подтверждения заставляет искать только те факты, которые уже соответствуют нашим убеждениям. Знание этих искажений — ключ к более объективному взгляду на мир.</p>
         
         <div class="quiz-box">
-            <h3>Тест: Что такое "Эффект привязки"?</h3>
+            <h3>Тест: что такое эффект привязки?</h3>
             <div class="quiz-options">
-                <button class="quiz-option" onclick="checkAnswer(this, true, 2)">Склонность доверять первой цифре</button>
-                <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Страх перед неопределенностью</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 2, 1)">Склонность доверять первой услышанной цифре</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 2, 1)">Страх перед неопределенностью</button>
             </div>
-            <p id="result2" class="quiz-result"></p>
+            <p id="result2_1" class="quiz-result"></p>
+
+            <h3>Тест: как работает предвзятость подтверждения?</h3>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, true, 2, 2)">Ищем только ту информацию, что подтверждает наши взгляды</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 2, 2)">Всегда ищем критику своих взглядов</button>
+            </div>
+            <p id="result2_2" class="quiz-result"></p>
+
+            <h3>Тест: зачем наш мозг использует эвристики?</h3>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, true, 2, 3)">Для экономии энергии</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 2, 3)">Для усложнения принятия решений</button>
+            </div>
+            <p id="result2_3" class="quiz-result"></p>
         </div>
     </main>
     <script src="js/script.js"></script>
