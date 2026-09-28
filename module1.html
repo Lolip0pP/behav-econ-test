@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 1 | Поведенческая экономика</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BE.COURSE</div>
+            <ul>
+                <li><a href="index.html">Курс</a></li>
+                <li><a href="materials.html">Материалы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Архитектура выбора</h1>
+        <p>Система 1 работает автоматически и быстро, а Система 2 требует усилий и концентрации. Большинство наших ошибок происходит, когда мы полагаемся на Систему 1 там, где нужно включить Систему 2.</p>
+        
+        <div class="quiz-box">
+            <h3>Тест: Какая система отвечает за решение сложных математических задач?</h3>
+            <label><input type="radio" name="q1" value="1"> Система 1</label><br>
+            <label><input type="radio" name="q1" value="2"> Система 2</label><br>
+            <button onclick="checkAnswer(1, '2')">Проверить</button>
+            <p id="result1"></p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -33,6 +33,23 @@ nav {
 .logo {
     font-weight: 800;
     font-size: 1.5rem;
+.quiz-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f7f6;
+    border-radius: 8px;
+}
+.quiz-box button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.quiz-box button:hover { background: #d35400; }
+
     letter-spacing: -1px;
 }
 
