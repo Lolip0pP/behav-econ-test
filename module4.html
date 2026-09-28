@@ -22,10 +22,11 @@
         
         <div class="quiz-box">
             <h3>Тест: Что такое Nudge?</h3>
-            <label><input type="radio" name="q4" value="1"> Обязательное принуждение к выбору</label><br>
-            <label><input type="radio" name="q4" value="2"> Мягкое подталкивание к выбору</label><br>
-            <button onclick="checkAnswer(4, '2')">Проверить</button>
-            <p id="result4"></p>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, false, 4)">Обязательное принуждение</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 4)">Мягкое подталкивание</button>
+            </div>
+            <p id="result4" class="quiz-result"></p>
         </div>
     </main>
     <script src="js/script.js"></script>

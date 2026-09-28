@@ -22,10 +22,11 @@
         
         <div class="quiz-box">
             <h3>Тест: Что такое "Эффект привязки"?</h3>
-            <label><input type="radio" name="q2" value="1"> Склонность доверять первой услышанной цифре</label><br>
-            <label><input type="radio" name="q2" value="2"> Страх перед неопределенностью</label><br>
-            <button onclick="checkAnswer(2, '1')">Проверить</button>
-            <p id="result2"></p>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, true, 2)">Склонность доверять первой цифре</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Страх перед неопределенностью</button>
+            </div>
+            <p id="result2" class="quiz-result"></p>
         </div>
     </main>
     <script src="js/script.js"></script>

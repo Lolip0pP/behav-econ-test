@@ -1,19 +1,21 @@
-// Логика проверки тестов
-function checkAnswer(moduleId, correctAnswer) {
-    const selected = document.querySelector(`input[name="q${moduleId}"]:checked`);
+function checkAnswer(button, isCorrect, moduleId) {
+    const parent = button.parentElement;
+    const options = parent.querySelectorAll('.quiz-option');
     const resultDiv = document.getElementById(`result${moduleId}`);
-    
-    if (!selected) {
-        resultDiv.textContent = "Пожалуйста, выберите ответ.";
-        resultDiv.style.color = "orange";
-        return;
-    }
 
-    if (selected.value === correctAnswer) {
+    options.forEach(opt => opt.style.pointerEvents = 'none');
+
+    if (isCorrect) {
+        button.classList.add('correct');
         resultDiv.textContent = "Верно!";
-        resultDiv.style.color = "green";
+        resultDiv.style.color = "#28a745";
     } else {
-        resultDiv.textContent = "Попробуйте еще раз.";
-        resultDiv.style.color = "red";
+        button.classList.add('wrong');
+        resultDiv.textContent = "Неверно, попробуйте еще раз.";
+        resultDiv.style.color = "#dc3545";
+        setTimeout(() => {
+            button.classList.remove('wrong');
+            options.forEach(opt => opt.style.pointerEvents = 'auto');
+        }, 1500);
     }
 }

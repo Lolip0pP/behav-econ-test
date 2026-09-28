@@ -22,10 +22,11 @@
         
         <div class="quiz-box">
             <h3>Тест: Как люди оценивают свои потери?</h3>
-            <label><input type="radio" name="q3" value="1"> Равноценно приобретениям</label><br>
-            <label><input type="radio" name="q3" value="2"> Более болезненно, чем приобретения</label><br>
-            <button onclick="checkAnswer(3, '2')">Проверить</button>
-            <p id="result3"></p>
+            <div class="quiz-options">
+                <button class="quiz-option" onclick="checkAnswer(this, false, 3)">Равноценно приобретениям</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 3)">Более болезненно, чем приобретения</button>
+            </div>
+            <p id="result3" class="quiz-result"></p>
         </div>
     </main>
     <script src="js/script.js"></script>
